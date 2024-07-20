@@ -4,7 +4,8 @@ import './index.css'
 import Layout from './Layout.jsx'
 import { createBrowserRouter,createRoutesFromElements,Route, RouterProvider } from 'react-router-dom'
 
-import {Home } from "./components/index.jsx"
+import {Home ,BlogPost,BlogList } from "./components/index.jsx"
+  
 
 
 const router=createBrowserRouter(
@@ -16,6 +17,8 @@ const router=createBrowserRouter(
       <Route path="footer-contact" element={<FooterContact/>}/>
       <Route path="footer-KnowTheTeam" element={<FooterKnowTheTeam/>}/>
       <Route path="footer-reference" element={<FooterReference/>}/> */}
+      <Route path="post/:postId" element={<BlogPost />} />
+
      </Route>
   )
 )
