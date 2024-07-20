@@ -14,9 +14,9 @@ const Home = () => {
           <h1 className="text-4xl font-normal text-orange-500">FROKER <span className="text-black">BLOG</span></h1>
           <p className="text-5xl text-gray-700 mt-8">Articles covering the most recent <br />updates and advancements</p>
         </header>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-4">
-          <div className="lg:col-span-1">
-            <img src={blogPic1} alt="Blog 1" className="w-full h-80 rounded-lg object-cover" />
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-4">
+          <div className="lg:col-span-2">
+            <div style={{ backgroundImage: `url(${blogPic1})` }} className="w-full h-80 rounded-lg bg-cover bg-center" />
             <div className="p-4">
               <p className="text-sm text-orange-600">by Varshita - 9 Feb 2024</p>
               <h2 className="text-lg font-bold mt-1">Title: Mastering the Art of Content Creation</h2>
@@ -26,7 +26,7 @@ const Home = () => {
           </div>
           <div className="lg:col-span-2 flex flex-col space-y-4 lg:space-y-2">
             <div className="flex flex-col lg:flex-row">
-              <img src={blogPic2} alt="Blog 2" className="lg:w-1/3 w-full h-64 rounded-lg object-cover lg:mr-4 mb-4 lg:mb-0" />
+              <div style={{ backgroundImage: `url(${blogPic2})` }} className="lg:w-1/2 w-full h-64 rounded-lg bg-cover bg-center lg:mr-4 mb-4 lg:mb-0" />
               <div className="p-4 lg:pl-0 lg:pr-4">
                 <p className="text-sm text-orange-600">by Varshita - 3 March 2024</p>
                 <h2 className="text-lg font-bold mt-1">What Is Content Creation, Anyway?</h2>
@@ -35,7 +35,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex flex-col lg:flex-row">
-              <img src={blogPic3} alt="Blog 3" className="lg:w-1/3 w-full h-64 rounded-lg object-cover lg:mr-4 mb-4 lg:mb-0" />
+              <div style={{ backgroundImage: `url(${blogPic3})` }} className="lg:w-1/2 w-full h-64 rounded-lg bg-cover bg-center lg:mr-4 mb-4 lg:mb-0" />
               <div className="p-4 lg:pl-0 lg:pr-4">
                 <p className="text-sm text-orange-600">by Varshita - 3 March 2024</p>
                 <h2 className="text-lg font-bold mt-1">Forbes 30 Under 30 India: Celebrating Innovation</h2>

@@ -48,12 +48,12 @@ const RecentPosts = () => {
 
   const displayPosts = posts.slice(pagesVisited, pagesVisited + postsPerPage).map((post, index) => (
     <div key={index} className="flex flex-col space-y-4">
-      <img src={post.image} alt={`Recent post ${index + 1}`} className="w-full h-auto rounded-lg" />
+      <div style={{ backgroundImage: `url(${post.image})` }} className="w-full h-96 rounded-lg bg-cover bg-center" />
       <div className="p-4">
         <p className="text-sm text-orange-600">by {post.author} - {post.date}</p>
         <h2 className="text-lg font-bold mt-1">{post.title}</h2>
         <p className="text-gray-700 mt-1">{post.description}</p>
-        <a href="#" className="text-orange-600 font-semibold mt-3 inline-block">Read More...</a>
+        <a href="#" className="text-orange-600 font-semibold mt-3 inline-block underline">Read More...</a>
       </div>
     </div>
   ));
@@ -65,9 +65,9 @@ const RecentPosts = () => {
   };
 
   return (
-    <div className="container mx-auto px-10 py-10 mt-5">
-      <header className="text-center mb-10">
-        <h2 className="text-3xl font-normal text-black">Recent Posts</h2>
+    <div className="container mx-auto p-0 py-10 mt-5 m-0 box-border">
+      <header className="mb-10">
+        <h2 className="text-4xl font-sans text-black">Recent Posts</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {displayPosts}
