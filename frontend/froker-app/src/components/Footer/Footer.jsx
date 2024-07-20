@@ -60,7 +60,7 @@ const Footer = () => {
       <div className="w-full relative">
         <img src={footerWave} alt="Footer Wave" className="w-full h-40 object-cover" />
         <div className="absolute inset-x-0 bottom-0 flex justify-center">
-          <p className="text-white bg-transparent px-2">&copy; 2024 Arroz Technology. All rights reserved</p>
+          <p className="text-white bg-transparent px-2 mb-6">&copy; 2024 Arroz Technology. All rights reserved</p>
         </div>
       </div>
     </div>

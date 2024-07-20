@@ -1,7 +1,7 @@
  
 
 import React, { useState } from 'react';
- import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import recentPost1 from '../../assets/recent-post-1.png';
 import recentPost2 from '../../assets/recent-post-2.png';
@@ -157,15 +157,87 @@ export const posts = [
   },
   { id: 9, image: recentPost10, author: 'Varshita', date: '29 March 2024', title: 'Apple Vision Pro: A Cosmic Revolution Unlock...', snippet: 'Imagine a world where productivity meets innovation, and your workspace transcends the ordinary. Welcome to Apple Vision Pro, where the boundaries ...', description: '', readTime: 8 },
   { id: 10, image: recentPost11, author: 'Varshita', date: '21 March 2024', title: 'Where Text Becomes Cinematic Magic! From Wo...', snippet: 'Remember when you were a kid, and you’d scribble fantastical stories in your diary? Well, OpenAI’s latest creation, Sora, just took that childhood ...', description: '', readTime: 7 },
-  { id: 11, image: recentPost12, author: 'Varshita', date: '15 March 2024', title: 'What Is Content Creation, Any...', snippet: 'So, youve heard the buzz about content creation. Maybe youre intrigued, or perhaps youre just here for the free snacks (dont worry,...', description: '', readTime: 5 },
-  { id: 12, image: recentPost13, author: 'Varshita', date: '3 March 2024', title: 'Forbes 30 Under 30 India: Celebr...', snippet: 'Unconventional Geniuses, Fearless Entrepreneurs, and Creative Mavericks: In a world where innovation is the currency of success, the Forbes...', description: '', readTime: 9 },
-  { id: 13, image: recentPost14, author: 'Varshita', date: '9 Feb 2024', title: 'Mastering the Art of Content...', snippet: 'Introduction: Welcome to the dynamic world of content creation, where creativity knows no bounds and innovation thrives. Whether youre passionate...', description: '', readTime: 8 },
+  {
+    id: 11,
+    image: recentPost12,
+    author: 'Varshita',
+    date: '3 April 2024',
+    title: 'What Is Content Creation, Anyway?',
+    snippet: "So, you've heard the buzz about content creation. Maybe you're intrigued, or perhaps you're just here for the free snacks (don't worry, I won't judge). Either way, let's unravel this creative mystery together...",
+    description: [
+        { 
+            subtitle: "What Is Content Creation, Anyway? 🎨", 
+            content: "So, you've heard the buzz about content creation. Maybe you're intrigued, or perhaps you're just here for the free snacks (don't worry, I won't judge). Either way, let's unravel this creative mystery together. Buckle up, my fellow word wizards and pixel painters—we're diving into the enchanting world of content creation!"
+        },
+        { 
+            subtitle: "The Art of Crafting Magic (Without a Wand)", 
+            content: "Content creation is like baking a cake, but instead of flour and eggs, you're mixing words, images, and videos. It's the alchemical process of turning ideas into digital gold. Whether you're writing a heartfelt blog post, filming a hilarious TikTok dance, or designing a drool-worthy Instagram grid, you're creating content. And guess what? You don't need a wizard hat or a magic wand (although they'd be cool). All you need is a dash of imagination and a sprinkle of determination." 
+        },
+        { 
+            subtitle: "Who Can Be a Content Creator? Spoiler Alert: You!", 
+            content: "Listen up, friend. Content creation isn't an exclusive club with a velvet rope and a grumpy bouncer. Nope, it's an all-inclusive party, and everyone's invited. Here's the guest list:" 
+        },
+        {
+            subtitle: "The Wordsmiths",
+            content: "If you can string sentences together like a pro (or even like a semi-pro), congrats! You're a content creator. Bloggers, copywriters, poets—they're all part of this wordy gang." 
+        },
+        { 
+            subtitle: "The Visual Dreamweavers",
+            content: "Are you the Picasso of pixels? Do you doodle in your sleep? Graphic designers, photographers, and illustrators, step right up! Your canvas is the digital realm, and your brush strokes are pixels." 
+        },
+        { 
+            subtitle: "The Video Sorcerers", 
+            content: "Lights, camera, action! If you can wield a camera (even if it's just your smartphone) and tell a story through moving pictures, you're a video content creator. YouTube vloggers, TikTok wizards, and filmmakers, this is your turf." 
+        },
+        { 
+            subtitle: "The Social Media Enchanters", 
+            content: "Ah, social media—the modern-day potion shop. If you can whip up engaging posts, sprinkle hashtags like fairy dust, and charm your followers, congrats! You're a social media content creator. Instagrammers, Tweeters, and LinkedIn aficionados, unite!" 
+        },
+        { 
+            subtitle: "The Magic Ingredients: Passion, Consistency, and Unicorn Tears", 
+            content: "Creating content isn't just about slapping words on a screen or tossing photos into the digital abyss. Nope, it's about passion—the kind that makes your heart do the cha-cha. Find your muse (whether it's a sassy cat or a sunflower field) and let it guide you. Consistency is your trusty sidekick. Imagine Batman without Robin or peanut butter without jelly (tragic, I know). Post regularly, like clockwork. Your audience will appreciate it, and the algorithm gods will nod in approval. And those unicorn tears? Well, they're metaphorical (unless you have a secret unicorn farm, in which case, invite me over). Tears represent vulnerability—the willingness to share your authentic self. Be real, my friend. Authenticity is the golden ticket to content creation stardom."
+        }
+    ],
+    readTime: 7
+}
+,
+{
+  id: 12,
+  image: recentPost13,
+  author: 'Varshita',
+  date: '3 March 2024',
+  title: 'Forbes 30 Under 30 India: Celebrating the Trailblazers of Tomorrow',
+  snippet: "Unconventional Geniuses, Fearless Entrepreneurs, and Creative Mavericks: In a world where innovation is the currency of success, the Forbes 30 Under 30 India list is like a treasure trove of young visionaries who are rewriting the rules...",
+  description: [
+      { subtitle: "Forbes 30 Under 30 India: Celebrating the Trailblazers of Tomorrow", content: "Unconventional Geniuses, Fearless Entrepreneurs, and Creative Mavericks: In a world where innovation is the currency of success, the Forbes 30 Under 30 India list is like a treasure trove of young visionaries who are rewriting the rules. These remarkable individuals have not only broken barriers but also built bridges to a brighter future. So, grab your chai latte, settle into your bean bag, and let’s dive into the fascinating world of India’s trailblazers." },
+      { subtitle: "The Pandemic Pioneers: Redefining Resilience", content: "The Class of 2023 is no ordinary bunch. They’ve weathered storms, danced with uncertainty, and emerged stronger. Many took the entrepreneurial plunge during the pandemic, proving that adversity is the best breeding ground for innovation. From Neeraj Chopra, the Tokyo 2020 Olympic gold medallist, to the dynamic duo behind Genrobotics Innovations (Arun George, Vimal Govind MK, Rashid Karimbanakkal, and Nikhil NP), these young guns are rewriting the playbook." },
+      { subtitle: "Women Who Mean Business: Breaking Glass Ceilings", content: "Eight women grace this year’s list, and they’re not here to play small. Misbah Ashraf (Jar) is revolutionizing the influencer marketing game, while Aashti Miller (MillerInk) is weaving magic with her words. UR Siddharth Philips is making healthcare smarter, and Sakshi Sindwani is strutting her stuff as a fashion influencer and digital content creator. These women are not just shattering glass ceilings; they’re building glass castles." },
+      { subtitle: "From Code to Crypto: The Digital Dreamweavers", content: "Cryptocurrency is now Web3, and our 20 categories reflect the digital zeitgeist. Romita Mazumdar (Foxtale) is creating immersive experiences, while Jayesh Gadewar (Scrut Automation) is automating the mundane. And let’s not forget Udit Singhal (Glass2Sand), who’s turning glass bottles into sand to save the planet. These tech wizards are coding their way to glory." }
+  ],
+  readTime: 8
+}
+,
+{
+  id: 13,
+  image: recentPost14,
+  author: 'Varshita',
+  date: '9 Feb 2024',
+  title: 'Mastering the Art of Content Creation: Strategies for Success in the Digital Era',
+  snippet: "Welcome to the dynamic world of content creation, where creativity knows no bounds and innovation thrives. Whether you're passionate about fashion, fitness, food, or quirky cat videos, the digital landscape offers boundless opportunities for aspiring content creators to shine...",
+  description: [
+      { subtitle: "Introduction", content: "Welcome to the dynamic world of content creation, where creativity knows no bounds and innovation thrives. Whether you're passionate about fashion, fitness, food, or quirky cat videos, the digital landscape offers boundless opportunities for aspiring content creators to shine. In this comprehensive guide, we'll delve into essential strategies to carve your niche, engage your audience, and monetize your talent. From identifying your passion to leveraging innovative platforms like Froker, we'll equip you with the tools and insights needed to thrive in the competitive world of content creation. So, let's embark on this exhilarating journey together and unlock the secrets to content creator success!" },
+      { subtitle: "Finding Your Passion and Niche", content: "At the core of every successful content creator lies a deep-seated passion that fuels their creativity and captivates their audience. Whether you're a makeup maven, a travel enthusiast, or a comedy virtuoso, embracing your unique interests is key to standing out in a crowded digital space. Take the time to explore your passions and identify a niche that resonates with both you and your target audience. With platforms like Froker, you have the freedom to delve into diverse niches and share your passion with a global audience hungry for authentic content. Remember, authenticity is the cornerstone of successful content creation – so don't be afraid to let your unique voice shine through." },
+      { subtitle: "Choosing Your Platforms Strategically", content: "In a sea of social media platforms, it's essential to choose the channels that best align with your content and audience. While Instagram, TikTok, and YouTube offer vast reach, platforms like Froker provide innovative opportunities for content creators to monetize their creativity directly. Consider your content format, target demographic, and long-term goals when selecting your platforms. By strategically leveraging these platforms, you can diversify your audience and maximize your earning potential. Whether you're creating short-form videos, immersive stories, or interactive polls, Froker empowers you to connect with your audience in meaningful ways and monetize your talent like never before." },
+      { subtitle: "Crafting Your Brand Identity", content: "Crafting a distinct brand identity is crucial for establishing credibility and building a loyal following in the digital space. From your visual aesthetic to your tone of voice, every aspect of your brand should reflect your personality and values. Take the time to develop a cohesive brand identity that resonates with your target audience and sets you apart from the competition. Whether you're known for your minimalist elegance, vibrant energy, or quirky humor, consistency is key to building trust and loyalty with your audience. With platforms like Froker, you can showcase your unique brand identity and engage with your audience in authentic and meaningful ways, driving growth and success in the digital era." }
+  ],
+  readTime: 7
+}
+,
   { id: 14, image: recentPost15, author: 'Varshita', date: '9 Feb 2024', title: 'The Slice of History: How Food Delivery...', snippet: 'Picture this: It’s 1889, and King Umberto and Queen Margherita of Italy are sitting in their royal chambers, stomachs growling. But wait, what’s that...', description: '', readTime: 6 },
   { id: 15, image: recentPost16, author: 'Varshita', date: '9 Feb 2024', title: 'A Comprehensive Guide to Des...', snippet: 'Choosing Your Garden Spot: So, youve decided to embark on a kitchen garden adventure? Fantastic! First things first—pick your plot. Whether you...', description: '', readTime: 7 },
   { id: 16, image: recentPost17, author: 'Varshita', date: '9 Feb 2024', title: 'Efficient Meal Prep: Time-Savi...', snippet: 'Quick and Efficient Meal Prep Strategies Hello, culinary enthusiasts! Lets delve into efficient meal preparation and kitchen hacks designed to streamli...', description: '', readTime: 6 },
   { id: 17, image: recentPost18, author: 'Varshita', date: '8 Feb 2024', title: 'Unlocking the Secrets of Healt...', snippet: 'Welcome to the delightful universe of healthy food habits! In this journey, vegetables take center stage, and your taste buds are in for a ...', description: '', readTime: 7 }
-  // Add other posts similarly...
-];
+ ];
 
 const RecentPosts = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -174,11 +246,13 @@ const RecentPosts = () => {
 
   const displayPosts = posts.slice(pagesVisited, pagesVisited + postsPerPage).map((post) => (
     <Link to={`/post/${post.id}`} key={post.id} className="flex flex-col space-y-4 cursor-pointer">
-      <div style={{ backgroundImage: `url(${post.image})` }} className="w-full h-96 rounded-lg bg-cover bg-center" />
+      <div style={{ backgroundImage: `url(${post.image})` }} className="w-full h-96 rounded-[15px] bg-cover bg-center" />
       <div className="p-4">
         <p className="text-sm text-orange-600">by {post.author} - {post.date}</p>
         <h2 className="text-lg font-bold mt-1">{post.title}</h2>
         <p className="text-gray-700 mt-1">{post.snippet}</p>
+        <Link to={`/post/${post.id}`} className="text-orange-600 font-semibold mt-3 inline-block underline">Read More...</Link>
+
       </div>
     </Link>
   ));
