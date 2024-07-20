@@ -1,13 +1,16 @@
-// src/components/BlogList/BlogList.jsx
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { fetchBlogs } from '../../BlogService/blogService'; // Adjust the path accordingly
-import Pagination from '../Pagination/Pagination'; // Adjust the path accordingly
+import { fetchBlogs } from '../../BlogService/blogService';  
+import Pagination from '../Pagination/Pagination';  
 
 const BlogList = () => {
+ // State variables to hold blogs, current page, and total pages
+
   const [blogs, setBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+
+  // Effect to fetch blogs whenever the current page changes
 
   useEffect(() => {
     const getBlogs = async () => {
@@ -19,6 +22,9 @@ const BlogList = () => {
     getBlogs();
   }, [currentPage]);
 
+
+  // Handler to change the current page
+  
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };

@@ -1,8 +1,8 @@
 import React from 'react';
-import footerLogo from '../../assets/logo.png'; // Ensure the logo is placed in the assets folder
-import qrCode from '../../assets/qrcode.jpg'; // Ensure the QR code image is placed in the assets folder
-import footerWave from '../../assets/footer-img.svg'; // Ensure the wave image is placed in the assets folder
-import arrowRight from '../../assets/arrow.jpg'; // Ensure the arrow image is placed in the assets folder
+import footerLogo from '../../assets/logo.png'; 
+import qrCode from '../../assets/qrcode.jpg'; 
+import footerWave from '../../assets/footer-img.svg'; 
+import arrowRight from '../../assets/arrow.jpg';  
 
 const Footer = () => {
   return (

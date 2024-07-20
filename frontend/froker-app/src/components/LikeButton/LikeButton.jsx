@@ -12,7 +12,7 @@ const LikeButton = ({ postId, initialLikes }) => {
       setLikes(updatedLikes);
       setLiked(!liked);
 
-      // In a real app, you'd use the following line to send the request to the server
+      // we can also use the following line to send the request to the server
       // const response = await axios.post(`/api/blogs/${postId}/${liked ? 'unlike' : 'like'}`);
       // setLikes(response.data.likes);
     } catch (error) {

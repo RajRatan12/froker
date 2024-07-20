@@ -24,6 +24,8 @@ import recentPost18 from '../../assets/recent-post-18.jpg';
 import Pagination from '../Pagination/Pagination';
 import Subscribe from '../Subscribe/Subscribe';
 
+// Array containing post data
+
 export const posts = [
   {
     id: 0,
@@ -240,9 +242,12 @@ export const posts = [
  ];
 
 const RecentPosts = () => {
+  // State management for current page and posts per page
   const [currentPage, setCurrentPage] = useState(0);
   const postsPerPage = 9;
   const pagesVisited = currentPage * postsPerPage;
+
+  // Display posts based on the current page
 
   const displayPosts = posts.slice(pagesVisited, pagesVisited + postsPerPage).map((post) => (
     <Link to={`/post/${post.id}`} key={post.id} className="flex flex-col space-y-4 cursor-pointer">
@@ -258,7 +263,8 @@ const RecentPosts = () => {
   ));
 
   const pageCount = Math.ceil(posts.length / postsPerPage);
-
+  
+    // Handle page change
   const changePage = ({ selected }) => {
     setCurrentPage(selected);
   };

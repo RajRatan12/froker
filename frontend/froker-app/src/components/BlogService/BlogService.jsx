@@ -7,6 +7,13 @@ export const fetchBlogs = async (page = 1, limit = 18) => {
   return response.data;
 };
 
+// /**
+//  * Fetches a single blog by its ID from the API.
+//  * 
+//  * @param {string} id - The ID of the blog to fetch.
+//  * @returns {Promise<Object>} A promise that resolves to the API response data.
+//  */
+
 export const fetchBlogById = async (id) => {
   const response = await axios.get(`${API_URL}/${id}`);
   return response.data;

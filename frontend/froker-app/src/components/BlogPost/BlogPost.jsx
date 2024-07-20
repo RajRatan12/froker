@@ -1,22 +1,24 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { posts } from '../RecentPosts/RecentPosts'; // Ensure this path is correct based on your project structure
+import { posts } from '../RecentPosts/RecentPosts';  
 import './index.css';
 
 const BlogPost = () => {
   const { postId } = useParams();
   const post = posts[postId];
-
+  
+  // Scroll to the top of the page when the postId changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [postId]);
-
+  // Handle case where post is not found
   if (!post) {
     return <div>Post not found</div>;
   }
 
   return (
     <div>
+        {/* navigation */}
       <div className="container mx-auto px-6 py-6">
         <div className="flex justify-left space-x-1 text-gray-700 text-sm py-4 mt-20 ml-20">
           <span className="font-bold">Blog</span>
@@ -35,6 +37,7 @@ const BlogPost = () => {
           <h1 className="text-white text-2xl font-bold uppercase">{post.title}</h1>
         </div>
       </div>
+        {/* Blog post content */}
       <div className="container mx-auto px-20 py-6">
         <div className="flex items-center space-x-2 text-gray-700 text-sm">
           <span className="text-orange-400">by {post.author}</span>
@@ -45,6 +48,7 @@ const BlogPost = () => {
           </span>
           <span className="text-orange-400">{post.readTime} minute read</span>
         </div>
+        {/* Blog post sections */}
         <div className="mt-4">
           <h2 className="text-2xl font-bold mb-4">{post.title}</h2>
           {post.description.map((section, index) => (
@@ -60,6 +64,7 @@ const BlogPost = () => {
           ))}
         </div>
       </div>
+        {/* Share buttons */}
       <div className="share-container">
         <div className="text-gray-700 font-semibold">Share</div>
         <a href="https://twitter.com/share" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center">
