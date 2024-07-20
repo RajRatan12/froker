@@ -21,7 +21,7 @@ const LikeButton = ({ postId, initialLikes }) => {
   };
 
   return (
-    <div className="flex items-center justify-end mt-0 mr-8">
+    <div className="flex items-center justify-end mr-10 mt-0 ">
       <img
         src={likeButton}
         alt="Like button"
