@@ -6,6 +6,8 @@ Live Backend - https://froker-qs1y.onrender.com/
 
 Code - https://github.com/RajRatan12/froker
 
+For Pictures and More documents - https://drive.google.com/file/d/1x8bmmr1RfYUp0Z3vsZLgsK3k2n47d7LM/view?usp=sharing
+
 Technology Stack used: React, Express.js, Node.js, and MongoDB.
 
 Frontend - 
